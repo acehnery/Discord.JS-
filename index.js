@@ -17,9 +17,9 @@ client.once("ready", () => {         //creates an arrow function that contains c
 client.on("messageCreate", message => {
     if (message.content.startsWith('!')) {
         if (message.content.substring(1) === "ping") {
-            message.reply("Pong!")
+            message.reply("Pong!");
         }
     }
-})
+});
 
-client.login(process.env.TOKEN); //You can skip dotenv part and just make a string eg. client.log('YOUR_TOKEN'), create .env file declare the token variable eg. TOKEN=YOUR_TOKEN
+client.login(process.env.TOKEN); //You can skip dotenv part and just make a string eg. client.login('YOUR_TOKEN'), create .env file declare the token variable eg. TOKEN=YOUR_TOKEN
